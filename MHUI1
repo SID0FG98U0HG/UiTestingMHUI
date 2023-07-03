@@ -1,0 +1,352 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MohawkUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TobLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ESP = Instance.new("Frame")
+local SubLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local ESPDesc = Instance.new("Frame")
+local SubLabel_2 = Instance.new("TextLabel")
+local SubLabel_3 = Instance.new("TextLabel")
+local HitboxDesc = Instance.new("Frame")
+local SubLabel_4 = Instance.new("TextLabel")
+local SubLabel_5 = Instance.new("TextLabel")
+local Hitbox = Instance.new("Frame")
+local SubLabel_6 = Instance.new("TextLabel")
+local Size = Instance.new("TextBox")
+local TextButton_2 = Instance.new("TextButton")
+local BottomLabel = Instance.new("TextLabel")
+local Bar = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local Version = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+MohawkUI.Name = "MohawkUI"
+MohawkUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MohawkUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = MohawkUI
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.400
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.207547173, 0, 0.222448975, 0)
+Frame.Size = UDim2.new(0, 438, 0, 308)
+
+TobLabel.Name = "TobLabel"
+TobLabel.Parent = Frame
+TobLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TobLabel.BackgroundTransparency = 1.000
+TobLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TobLabel.BorderSizePixel = 0
+TobLabel.Position = UDim2.new(0.260273963, 0, 0, 0)
+TobLabel.Size = UDim2.new(0, 209, 0, 54)
+TobLabel.Font = Enum.Font.SourceSansBold
+TobLabel.Text = "MohawkUI"
+TobLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TobLabel.TextScaled = true
+TobLabel.TextSize = 14.000
+TobLabel.TextStrokeColor3 = Color3.fromRGB(0, 29, 14)
+TobLabel.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0388127863, 0, 0.237012982, 0)
+ScrollingFrame.Size = UDim2.new(0, 404, 0, 220)
+ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+
+ESP.Name = "ESP"
+ESP.Parent = ScrollingFrame
+ESP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BackgroundTransparency = 0.800
+ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.00415932015, 0, 0.00132614002, 0)
+ESP.Size = UDim2.new(0, 183, 0, 92)
+
+SubLabel.Name = "SubLabel"
+SubLabel.Parent = ESP
+SubLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel.BackgroundTransparency = 1.000
+SubLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SubLabel.BorderSizePixel = 0
+SubLabel.Size = UDim2.new(0, 183, 0, 24)
+SubLabel.Font = Enum.Font.Nunito
+SubLabel.Text = "Wallhack (ESP)"
+SubLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel.TextScaled = true
+SubLabel.TextSize = 14.000
+SubLabel.TextWrapped = true
+
+TextButton.Parent = ESP
+TextButton.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+TextButton.BackgroundTransparency = 0.900
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 1.65856406e-07, 0)
+TextButton.Size = UDim2.new(0, 183, 0, 92)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+ImageLabel.Parent = ESP
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.300546438, 0, 0.260869414, 0)
+ImageLabel.Size = UDim2.new(0, 71, 0, 65)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=13946456297"
+
+ESPDesc.Name = "ESPDesc"
+ESPDesc.Parent = ScrollingFrame
+ESPDesc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ESPDesc.BackgroundTransparency = 0.800
+ESPDesc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESPDesc.BorderSizePixel = 0
+ESPDesc.Position = UDim2.new(0.499208838, 0, 0.00132614002, 0)
+ESPDesc.Size = UDim2.new(0, 183, 0, 92)
+
+SubLabel_2.Name = "SubLabel"
+SubLabel_2.Parent = ESPDesc
+SubLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_2.BackgroundTransparency = 1.000
+SubLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SubLabel_2.BorderSizePixel = 0
+SubLabel_2.Size = UDim2.new(0, 183, 0, 17)
+SubLabel_2.Font = Enum.Font.Nunito
+SubLabel_2.Text = "Description:"
+SubLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_2.TextScaled = true
+SubLabel_2.TextSize = 14.000
+SubLabel_2.TextWrapped = true
+
+SubLabel_3.Name = "SubLabel"
+SubLabel_3.Parent = ESPDesc
+SubLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_3.BackgroundTransparency = 1.000
+SubLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SubLabel_3.BorderSizePixel = 0
+SubLabel_3.Position = UDim2.new(0, 0, 0.184782118, 0)
+SubLabel_3.Size = UDim2.new(0, 183, 0, 74)
+SubLabel_3.Font = Enum.Font.Nunito
+SubLabel_3.Text = "Wallhacks are a powerful and useful tool that millions of exploiters use and perfect to gain an advantage in competitive games such as first person shooters, while powerful, ESP Wallhacks are virtually undetectable by ROBLOX anticheat as they are located and function entirely on the client side and do not interfere with the server."
+SubLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_3.TextScaled = true
+SubLabel_3.TextSize = 14.000
+SubLabel_3.TextWrapped = true
+
+HitboxDesc.Name = "HitboxDesc"
+HitboxDesc.Parent = ScrollingFrame
+HitboxDesc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HitboxDesc.BackgroundTransparency = 0.800
+HitboxDesc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HitboxDesc.BorderSizePixel = 0
+HitboxDesc.Position = UDim2.new(0.499208838, 0, 0.183144331, 0)
+HitboxDesc.Size = UDim2.new(0, 183, 0, 92)
+
+SubLabel_4.Name = "SubLabel"
+SubLabel_4.Parent = HitboxDesc
+SubLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_4.BackgroundTransparency = 1.000
+SubLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SubLabel_4.BorderSizePixel = 0
+SubLabel_4.Position = UDim2.new(0, 0, 0.184782118, 0)
+SubLabel_4.Size = UDim2.new(0, 183, 0, 74)
+SubLabel_4.Font = Enum.Font.Nunito
+SubLabel_4.Text = "A Hitbox expander is a great tool in exploiting as in games such as first person shooters such as phantom forces or other combat games like blood and iron itself, hitboxes are a vital part of the game. Enlarging the hitbox makes it much easier for you to kill other players and impossible to miss shots."
+SubLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_4.TextScaled = true
+SubLabel_4.TextSize = 14.000
+SubLabel_4.TextWrapped = true
+
+SubLabel_5.Name = "SubLabel"
+SubLabel_5.Parent = HitboxDesc
+SubLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_5.BackgroundTransparency = 1.000
+SubLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SubLabel_5.BorderSizePixel = 0
+SubLabel_5.Size = UDim2.new(0, 183, 0, 17)
+SubLabel_5.Font = Enum.Font.Nunito
+SubLabel_5.Text = "Description:"
+SubLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_5.TextScaled = true
+SubLabel_5.TextSize = 14.000
+SubLabel_5.TextWrapped = true
+
+Hitbox.Name = "Hitbox"
+Hitbox.Parent = ScrollingFrame
+Hitbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hitbox.BackgroundTransparency = 0.800
+Hitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hitbox.BorderSizePixel = 0
+Hitbox.Position = UDim2.new(0.00415932015, 0, 0.183144331, 0)
+Hitbox.Size = UDim2.new(0, 183, 0, 92)
+
+SubLabel_6.Name = "SubLabel"
+SubLabel_6.Parent = Hitbox
+SubLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_6.BackgroundTransparency = 1.000
+SubLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SubLabel_6.BorderSizePixel = 0
+SubLabel_6.Size = UDim2.new(0, 183, 0, 24)
+SubLabel_6.Font = Enum.Font.Nunito
+SubLabel_6.Text = "Hitbox Expander"
+SubLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+SubLabel_6.TextScaled = true
+SubLabel_6.TextSize = 14.000
+SubLabel_6.TextWrapped = true
+
+Size.Name = "Size"
+Size.Parent = Hitbox
+Size.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Size.BackgroundTransparency = 0.900
+Size.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Size.BorderSizePixel = 0
+Size.Position = UDim2.new(0.147540987, 0, 0.326086968, 0)
+Size.Size = UDim2.new(0, 128, 0, 27)
+Size.Font = Enum.Font.SourceSans
+Size.PlaceholderText = "Size"
+Size.Text = ""
+Size.TextColor3 = Color3.fromRGB(255, 255, 255)
+Size.TextScaled = true
+Size.TextSize = 14.000
+Size.TextWrapped = true
+
+TextButton_2.Parent = Hitbox
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 0.900
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.284153014, 0, 0.706521749, 0)
+TextButton_2.Size = UDim2.new(0, 79, 0, 19)
+TextButton_2.Font = Enum.Font.SourceSansBold
+TextButton_2.Text = "Apply"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextWrapped = true
+
+BottomLabel.Name = "BottomLabel"
+BottomLabel.Parent = Frame
+BottomLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BottomLabel.BackgroundTransparency = 1.000
+BottomLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BottomLabel.BorderSizePixel = 0
+BottomLabel.Position = UDim2.new(0.417078435, 0, 0.136363626, 0)
+BottomLabel.Size = UDim2.new(0, 134, 0, 21)
+BottomLabel.Font = Enum.Font.SourceSans
+BottomLabel.Text = "Exclusive Blood and Iron Exploit"
+BottomLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+BottomLabel.TextScaled = true
+BottomLabel.TextSize = 14.000
+BottomLabel.TextStrokeColor3 = Color3.fromRGB(0, 29, 14)
+BottomLabel.TextWrapped = true
+
+Bar.Name = "Bar"
+Bar.Parent = Frame
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(0.0251141544, 0, 0.204545453, 0)
+Bar.Size = UDim2.new(0, 410, 0, 2)
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.892694056, 0, 0, 0)
+Close.Size = UDim2.new(0, 47, 0, 17)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "Close"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Version.Name = "Version"
+Version.Parent = Frame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.0251141544, 0, -0.012987013, 0)
+Version.Size = UDim2.new(0, 79, 0, 25)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "Version: [Testing]"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
+
+UICorner.Parent = Frame
+
+-- Scripts:
+
+local function EZLYF_fake_script() -- Frame.DragScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(EZLYF_fake_script)()
+local function PPLS_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SID0FG98U0HG/Blood-and-Iron-Hitbox-Expander-/main/Expander"))();
+	end)
+end
+coroutine.wrap(PPLS_fake_script)()
